@@ -9,10 +9,10 @@
     <nav>
       <ul>
         <li class="logo"><a href="#">Creative Books</a></li>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Rentals</a></li>
-        <li><a href="#">Digital</a></li>
-        <li><a href="#">About</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="userLibrary.html">Rentals</a></li>
+        <li><a href="userLibrary.html">Digital</a></li>
+        <li><a href="about.html">About</a></li>
       </ul>
     </nav>
   </header>
@@ -22,18 +22,20 @@
       <h1>Welcome to Creative Books</h1>
       <div class="search-bar">
         <input type="text" placeholder="Search for books...">
-        <button type="submit">Search</button>
+        <button type="submit" onclick="window.location.href='search.html';">Search</button>
       </div>
     </section>
 
     <section class="features">
-      <div class="feature">
-        <img src="images/rental_books.jpg" alt="Rental Books">
+      <div class="feature" >
+        <a href="userLibrary.html">
+        <img src="images/rental_books.jpg" alt="Rental Books"></a>
         <h2>Rental Books</h2>
         <p>Rent digital books for a specified period with easy return options.</p>
       </div>
       <div class="feature">
-        <img src="images/digital_books.jpg" alt="Digital Books">
+        <a href="userLibrary.html">
+        <img src="images/digital_books.jpg" alt="Digital Books"></a>
         <h2>Digital Books</h2>
         <p>Enjoy reading digital books on our user-friendly platform.</p>
       </div>

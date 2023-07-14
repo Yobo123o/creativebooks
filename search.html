@@ -9,10 +9,10 @@
     <nav>
       <ul>
         <li class="logo"><a href="#">Creative Books</a></li>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Rentals</a></li>
-        <li><a href="#">Digital</a></li>
-        <li><a href="#">About</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="userLibrary.html">Rentals</a></li>
+        <li><a href="userLibrary.html">Digital</a></li>
+        <li><a href="about.html">About</a></li>
       </ul>
     </nav>
   </header>
@@ -23,8 +23,17 @@
         <h1>Search Books</h1>
         <div class="search-bar">
           <input type="text" placeholder="Enter keywords...">
-          <button type="submit">Search</button>
+          <button type="submit" onclick="window.location.href='search.html';">Search</button>
         </div>
+        <div class="book-info">
+         <a href="checkout.html">
+          <h1>Book Title</h1>
+        </a>
+          <p class="epigraph">Epigraph / Description</p>
+          <div class="author-publisher">
+            <p>Author: Author Name</p>
+            <p>Publisher: Publisher Name</p>
+          </div>
       </div>
       <div class="filter-container">
         <h2>Filters</h2>

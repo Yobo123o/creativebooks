@@ -295,6 +295,22 @@ body, figure, h1, h2, p, ul, li {
   margin: 10px 0;
 }
 
+.checkout button[type="finish"] {
+  padding: 8px 16px;
+  font-size: 16px;
+  background-color: #0084ff;
+  color: #fff;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+.finish-button {
+  text-align: center;
+}
+
 /* User Library */
 
 .user-library {
