@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Creative Books - Account Details</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li class="logo"><a href="#">Creative Books</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="userLibrary.html">Rentals</a></li>
+        <li><a href="userLibrary.html">Digital</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="account.html">Account</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="account-detail">
+        <a href="#" alt="Change Avatar">
+            <img src="./SAMPLE.PNG" class="roundimg" alt="Change User Avatar">  <!-- TODO: https://github.com/meganz/avatar-picker/blob/master/index.html-->
+        </a>
+      <div class="account-info">
+        <h1>Account Name</h1>
+        <p class="book-info"></p>
+        <div class="account-important">
+          <p>Email: account@email.com</p>
+          <p>Password: **********</p>
+        </div>
+        <button class="open-button" onclick="openForm()">Open Form</button>
+        <div class="form-popup" id="myForm">
+            <form action="/action_page.php" class="form-container">
+              <h1><u>Changes</u></h1>
+
+              <label for="email"><b>Change Email</b></label>
+              <input type="text" class="txt-fields" placeholder="Current Email" name="email" required>
+              <input type="text" placeholder="New Email" name="email" required>
+          
+              <label for="psw"><b>Change Password</b></label>
+              <input type="password" placeholder="Current Password" name="psw" required>
+              <input type="password" placeholder="Confirm Password" name="psw" required>
+          
+              <button type="submit" class="btn">Submit</button>
+              <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+            </form>
+          </div>
+          <script>
+            function openForm() {
+              document.getElementById("myForm").style.display = "block";
+            }
+            
+            function closeForm() {
+              document.getElementById("myForm").style.display = "none";
+            }
+            </script>
+      </div>
+      &nbsp; <!-- Create space around Change Email/Pass button -->
+      <div class="account-pref">
+        <h2>Preferences</h2>
+        <ul class="pref-list">
+          <li>
+            <p class="pref-title">NSFW</p>
+            <p>Adult only content.</p>
+
+            <!-- Rectangular switch -->
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider"></span>
+            </label>
+          </li>
+          &nbsp; <!-- Space for legibility -->
+          <li>
+            <p class="review-author">Cookies</p>
+            <p>For an improved website experience.</p>
+            <!-- Rectangular switch -->
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider"></span>
+            </label>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Creative Books. All rights reserved.</p>
+  </footer>
+</body>
+</html>
